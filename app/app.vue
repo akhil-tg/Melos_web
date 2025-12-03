@@ -44,4 +44,13 @@ useSeoMeta({
   twitterTitle: 'Musily: Enjoy your music with a great music app.',
   twitterDescription: 'Enjoy your music with a great music app.',
 })
+useHead({
+  script: [
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8530606967858852",
+      async: true,
+      crossorigin: "anonymous"
+    }
+  ]
+})
 </script>
