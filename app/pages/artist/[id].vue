@@ -54,7 +54,7 @@ onMounted(async () => {
 
     // Redirect to musily:// after 3 seconds
     setTimeout(() => {
-      const musilyUrl = `musily://artist/${artistId}`
+      const musilyUrl = `musily://musily.app/artist/${artistId}`
       window.location.href = musilyUrl
     }, 3000)
   } catch (err) {
@@ -63,7 +63,7 @@ onMounted(async () => {
 
     // Still redirect after 3 seconds even on error
     setTimeout(() => {
-      window.location.href = `musily://artist/${route.params.id}`
+      window.location.href = `musily://musily.app/artist/${route.params.id}`
     }, 3000)
   }
 })

@@ -109,18 +109,16 @@ onMounted(async () => {
 
     isLoading.value = false
 
-    // Redirect to musily:// after 3 seconds
     setTimeout(() => {
-      const musilyUrl = `musily://album/${albumId}/${songId}`
+      const musilyUrl = `musily://musily.app/album/${albumId}/${songId}`
       window.location.href = musilyUrl
     }, 3000)
   } catch (err) {
     error.value = err instanceof Error ? err.message : 'Failed to load song'
     isLoading.value = false
 
-    // Still redirect after 3 seconds even on error
     setTimeout(() => {
-      window.location.href = `musily://album/${route.params.albumId}/${route.params.songId}`
+      window.location.href = `musily://musily.app/album/${route.params.albumId}/${route.params.songId}`
     }, 3000)
   }
 })

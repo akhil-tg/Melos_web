@@ -57,7 +57,7 @@ onMounted(async () => {
     isLoading.value = false
 
     setTimeout(() => {
-      const musilyUrl = `musily://album/${albumId}`
+      const musilyUrl = `musily://musily.app/album/${albumId}`
       window.location.href = musilyUrl
     }, 3000)
   } catch (err) {
@@ -65,7 +65,7 @@ onMounted(async () => {
     isLoading.value = false
 
     setTimeout(() => {
-      window.location.href = `musily://album/${route.params.albumId}`
+      window.location.href = `musily://musily.app/album/${route.params.albumId}`
     }, 3000)
   }
 })
