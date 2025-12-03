@@ -94,17 +94,17 @@ onMounted(async () => {
       return
     }
 
-    const song = album.tracks?.find((track: any) => track.videoId === songId)
+    const song = album.songs?.find((track: any) => track.videoId === songId)
     
     if (!song) {
       error.value = 'Song not found in album'
       return
     }
 
-    albumTitle.value = album.title || 'Unknown Album'
-    artistName.value = album.artists?.[0]?.name || 'Unknown Artist'
+    albumTitle.value = album.name || 'Unknown Album'
+    artistName.value = album.artist.name || 'Unknown Artist'
     albumThumbnail.value = album.thumbnails?.[0]?.url || ''
-    songTitle.value = song.title || 'Unknown Song'
+    songTitle.value = song.name || 'Unknown Song'
     duration.value = song.duration || 0
 
     isLoading.value = false

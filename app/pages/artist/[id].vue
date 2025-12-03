@@ -24,7 +24,6 @@ const isLoading = ref(true)
 const error = ref<string | null>(null)
 const artistData = ref({
   title: '',
-  description: '',
   thumbnail: '',
 })
 
@@ -46,13 +45,11 @@ onMounted(async () => {
 
     artistData.value = {
       title: artist.name || 'Unknown Artist',
-      description: artist.description || '',
       thumbnail: artist.thumbnails?.[0]?.url || '',
     }
 
     isLoading.value = false
 
-    // Redirect to musily:// after 3 seconds
     setTimeout(() => {
       const musilyUrl = `musily://musily.app/artist/${artistId}`
       window.location.href = musilyUrl
@@ -61,7 +58,6 @@ onMounted(async () => {
     error.value = err instanceof Error ? err.message : 'Failed to load artist'
     isLoading.value = false
 
-    // Still redirect after 3 seconds even on error
     setTimeout(() => {
       window.location.href = `musily://musily.app/artist/${route.params.id}`
     }, 3000)

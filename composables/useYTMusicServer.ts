@@ -1,16 +1,50 @@
 import { ref } from 'vue'
 
+export interface Thumbnail {
+  url: string
+  width?: number
+  height?: number
+}
+
+export interface Artist {
+  artistId?: string
+  name: string
+}
+
+export interface Song {
+  title: string
+  artists?: Artist[]
+  thumbnails?: Thumbnail[]
+  duration?: number
+  videoId?: string
+}
+
+export interface ArtistDetails {
+  artistId?: string
+  name: string
+  thumbnails?: Thumbnail[]
+  description?: string
+}
+
+export interface Album {
+  albumId?: string
+  name: string
+  artist?: Artist
+  thumbnails?: Thumbnail[]
+  year?: number
+}
+
 const isInitialized = ref(false)
 const isLoading = ref(false)
 const error = ref<string | null>(null)
 
 export function useYTMusicServer() {
-  const getSong = async (videoId: string) => {
+  const getSong = async (videoId: string): Promise<Song> => {
     isLoading.value = true
     error.value = null
 
     try {
-      const response = await $fetch(`/api/ytmusic/song/${videoId}`)
+      const response = await $fetch<Song>(`/api/ytmusic/song/${videoId}`)
       return response
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to fetch song'
@@ -21,12 +55,12 @@ export function useYTMusicServer() {
     }
   }
 
-  const getArtist = async (artistId: string) => {
+  const getArtist = async (artistId: string): Promise<ArtistDetails> => {
     isLoading.value = true
     error.value = null
 
     try {
-      const response = await $fetch(`/api/ytmusic/artist/${artistId}`)
+      const response = await $fetch<ArtistDetails>(`/api/ytmusic/artist/${artistId}`)
       return response
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to fetch artist'
@@ -37,12 +71,12 @@ export function useYTMusicServer() {
     }
   }
 
-  const getAlbum = async (albumId: string) => {
+  const getAlbum = async (albumId: string): Promise<Album> => {
     isLoading.value = true
     error.value = null
 
     try {
-      const response = await $fetch(`/api/ytmusic/album/${albumId}`)
+      const response = await $fetch<Album>(`/api/ytmusic/album/${albumId}`)
       return response
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to fetch album'
