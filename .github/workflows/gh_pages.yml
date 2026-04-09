@@ -10,6 +10,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
@@ -18,16 +21,19 @@ jobs:
           node-version: '22'
           cache: 'yarn'
 
-      - name: Install Dependencies
-        run: yarn install
+      - name: Set FORCE_JAVASCRIPT_ACTIONS_TO_NODE24
+        run: echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true" >> $GITHUB_ENV
 
       - name: Build Project
-        run: yarn generate
+        run: |
+          yarn install
+          yarn generate
 
       - name: Create NoJekyll file
         run: touch ./.output/public/.nojekyll
 
       - name: Build and Deploy
+        id: deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
