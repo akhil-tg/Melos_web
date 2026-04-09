@@ -31,7 +31,7 @@ export const useGitHubReleases = () => {
 
     try {
       const response = await fetch(
-        'https://api.github.com/repos/MusilyApp/musily/releases/latest'
+        'https://api.github.com/repos/akhil-tg/Melos/releases/latest'
       )
 
       if (!response.ok) {
