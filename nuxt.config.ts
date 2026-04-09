@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   
   // App configuration
   app: {
+    baseURL: '/Melos_web/',
     head: {
       htmlAttrs: {
         lang: 'en'
