@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.musily.music",
+      "sha256_cert_fingerprints": [
+        "8E:C3:A3:12:BB:33:C1:1D:CD:16:05:45:9D:18:81:0A:15:19:11:BC:32:82:26:96:AF:A1:D0:8A:C0:12:8C:68"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.musily.music.dev",
+      "sha256_cert_fingerprints": [
+        "51:F3:21:59:C4:C4:8E:A6:18:58:B1:FE:2F:53:0D:B6:35:67:59:08:0C:AA:E7:F0:82:B5:21:6E:C3:D2:F8:A3"
+      ]
+    }
+  }
+]
