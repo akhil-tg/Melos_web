@@ -3,7 +3,7 @@
     <div class="container">
       <div class="cta-content">
         <h2>Ready to take control of your music?</h2>
-        <p>Download Musily today and experience music the way it should be.</p>
+        <p>Download Melos today and experience music the way it should be.</p>
         <p>Free, private, and on your terms.</p>
         <NuxtLink to="/downloads" class="btn btn-primary btn-lg">
           <Download :size="20" />

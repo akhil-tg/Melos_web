@@ -1,6 +1,6 @@
 {
-  "name": "Musily",
-  "short_name": "Musily",
+  "name": "Melos",
+  "short_name": "Melos",
   "description": "A great music app. Free, open-source, no ads, no telemetry.",
   "start_url": "/",
   "scope": "/",

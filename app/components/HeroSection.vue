@@ -3,7 +3,7 @@
     <div class="container hero-container">
       <div class="hero-content">
         <h1 class="hero-title">Free music for everyone</h1>
-        <p class="hero-description">Musily is an open-source music app. Free, no ads, no telemetry. Download your favorite tracks and listen offline, anytime, anywhere.</p>
+        <p class="hero-description">Melos is an open-source music app. Free, no ads, no telemetry. Download your favorite tracks and listen offline, anytime, anywhere.</p>
         <div class="hero-actions">
           <NuxtLink to="/downloads" class="btn btn-primary btn-lg">
             <Download :size="20" />
@@ -15,16 +15,16 @@
           </a>
         </div>
         <div class="hero-social">
-          <a href="https://github.com/MusilyApp/musily" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+          <a href="https://github.com/akhil-tg/Melos" target="_blank" rel="noopener" class="social-icon" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://t.me/MusilyApp" target="_blank" rel="noopener" class="social-icon" title="Telegram">
+          <a href="https://t.me/MelosApp" target="_blank" rel="noopener" class="social-icon" title="Telegram">
             <i class="fab fa-telegram"></i>
           </a>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="/assets/musily_logo_foreground_white.png" alt="Musily" class="hero-logo" width="380" />
+        <img src="/assets/musily_logo_foreground_white.png" alt="Melos" class="hero-logo" width="380" />
       </div>
     </div>
   </section>

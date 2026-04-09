@@ -2,7 +2,7 @@
   <section id="features" class="features-section">
     <div class="container">
       <div class="section-header">
-        <h2>Why Musily?</h2>
+        <h2>Why Melos?</h2>
         <p>Built for music lovers who value freedom and privacy.</p>
       </div>
 
@@ -38,7 +38,7 @@
             <MonitorSmartphone :size="32" />
           </div>
           <h3>Cross-Platform</h3>
-          <p>Use Musily on Android, Linux and Windows. Your music, everywhere.</p>
+          <p>Use Melos on Android, Linux and Windows. Your music, everywhere.</p>
           <ul class="feature-list">
             <li>Available on different devices</li>
             <li>Sync your library with backup</li>

@@ -3,15 +3,15 @@
     <section class="downloads-hero">
       <div class="container">
         <NuxtLink to="/" class="hero-logo-link">
-          <img src="/assets/musily_logo_rounded_white.png" alt="Musily" class="hero-logo" />
+          <img src="/assets/musily_logo_rounded_white.png" alt="Melos" class="hero-logo" />
         </NuxtLink>
-        <h1>Download Musily</h1>
+        <h1>Download Melos</h1>
         <p>Choose your platform and get started</p>
         <div class="hero-social">
-          <a href="https://github.com/MusilyApp/musily" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+          <a href="https://github.com/akhil-tg/Melos" target="_blank" rel="noopener" class="social-icon" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://t.me/MusilyApp" target="_blank" rel="noopener" class="social-icon" title="Telegram">
+          <a href="https://t.me/MelosApp" target="_blank" rel="noopener" class="social-icon" title="Telegram">
             <i class="fab fa-telegram"></i>
           </a>
         </div>
@@ -74,7 +74,7 @@
         <section class="additional-info">
           <div class="info-box">
             <h3>Open Source</h3>
-            <p>Musily is completely open-source. You can find the source code and contribute on <a href="https://github.com/MusilyApp/musily" target="_blank" rel="noopener">GitHub</a>.</p>
+            <p>Melos is completely open-source. You can find the source code and contribute on <a href="https://github.com/MelosApp/musily" target="_blank" rel="noopener">GitHub</a>.</p>
           </div>
           <div class="info-box">
             <h3>System Requirements</h3>
@@ -113,12 +113,12 @@ onMounted(() => {
 })
 
 useSeoMeta({
-  title: 'Download Musily - Free Music App',
-  ogTitle: 'Download Musily - Free Music App',
-  description: 'Download Musily for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
-  ogDescription: 'Download Musily for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
-  twitterTitle: 'Download Musily - Free Music App',
-  twitterDescription: 'Download Musily for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
+  title: 'Download Melos - Free Music App',
+  ogTitle: 'Download Melos - Free Music App',
+  description: 'Download Melos for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
+  ogDescription: 'Download Melos for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
+  twitterTitle: 'Download Melos - Free Music App',
+  twitterDescription: 'Download Melos for Android, Windows, and Linux. Free, open-source music player with no ads or telemetry.',
 })
 
 const getFilesByPlatform = (platform: string) => {

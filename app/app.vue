@@ -15,18 +15,18 @@
       <Meta name="theme-color" content="#151318" />
       
       <!-- OG Meta Tags -->
-      <Meta property="og:url" content="https://musily.app/" />
+      <Meta property="og:url" content="https://melos.app/" />
       <Meta property="og:type" content="website" />
       <Meta property="og:locale" content="en_US" />
-      <Meta property="og:site_name" content="Musily" />
-      <Meta property="og:image" content="/icons/og_img.png" />
+      <Meta property="og:site_name" content="Melos" />
+      <Meta property="og:image" content="/assets/og_img.png" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
       <Meta property="og:image:type" content="image/png" />
       
       <!-- Twitter Card -->
       <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:image" content="/icons/og_img.png" />
+      <Meta name="twitter:image" content="/assets/og_img.png" />
     </Head>
     <NuxtRouteAnnouncer />
     <NuxtLayout>
@@ -37,11 +37,11 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Musily: A great music app.',
-  ogTitle: 'Musily: A great music app.',
+  title: 'Melos: A great music app.',
+  ogTitle: 'Melos: A great music app.',
   description: 'Enjoy your music with a great music app.',
   ogDescription: 'Enjoy your music with a great music app.',
-  twitterTitle: 'Musily: Enjoy your music with a great music app.',
+  twitterTitle: 'Melos: Enjoy your music with a great music app.',
   twitterDescription: 'Enjoy your music with a great music app.',
 })
 useHead({

@@ -13,8 +13,8 @@ import { useRoute } from 'nuxt/app'
 import { useYTMusicAPI } from '~/composables/useYTMusicAPI'
 
 useSeoMeta({
-  title: 'Artist - Musily',
-  description: 'Opening artist in Musily app',
+  title: 'Artist - Melos',
+  description: 'Opening artist in Melos app',
 })
 
 const route = useRoute()

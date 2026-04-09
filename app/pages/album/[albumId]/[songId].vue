@@ -12,7 +12,7 @@
         <div class="error-icon">⚠️</div>
         <h2>Error Loading Song</h2>
         <p>{{ error }}</p>
-        <p class="fallback-text">You will be redirected to Musily app...</p>
+        <p class="fallback-text">You will be redirected to Melos app...</p>
       </div>
 
       <!-- Success State -->
@@ -46,7 +46,7 @@
 
         <!-- Redirect Message -->
         <div class="redirect-message">
-          <p>Opening in Musily...</p>
+          <p>Opening in Melos...</p>
           <div class="progress-bar">
             <div class="progress-fill"></div>
           </div>
@@ -62,8 +62,8 @@ import { useRoute } from 'nuxt/app'
 import { useYTMusicAPI } from '~/composables/useYTMusicAPI'
 
 useSeoMeta({
-  title: 'Song in Album - Musily',
-  description: 'Opening song in Musily app',
+  title: 'Song in Album - Melos',
+  description: 'Opening song in Melos app',
 })
 
 const route = useRoute()

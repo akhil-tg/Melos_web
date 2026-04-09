@@ -8,7 +8,7 @@
 
       <div v-else-if="error" class="loading-state">
         <h2>Openning {{ type }}</h2>
-        <p class="fallback-text">You will be redirected to Musily app...</p>
+        <p class="fallback-text">You will be redirected to Melos app...</p>
       </div>
 
       <div v-else class="success-state">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="redirect-message">
-          <p>Opening in Musily...</p>
+          <p>Opening in Melos...</p>
           <div class="progress-bar">
             <div class="progress-fill"></div>
           </div>

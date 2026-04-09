@@ -9,11 +9,11 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Musily: A great music app.',
-  ogTitle: 'Musily: A great music app.',
+  title: 'Melos: A great music app.',
+  ogTitle: 'Melos: A great music app.',
   description: 'Enjoy your music with a great music app. Free, open-source, no ads, no telemetry.',
   ogDescription: 'Enjoy your music with a great music app. Free, open-source, no ads, no telemetry.',
-  twitterTitle: 'Musily: Enjoy your music with a great music app.',
+  twitterTitle: 'Melos: Enjoy your music with a great music app.',
   twitterDescription: 'Enjoy your music with a great music app. Free, open-source, no ads, no telemetry.',
 })
 </script>
