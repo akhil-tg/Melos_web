@@ -24,4 +24,4 @@ logs
 !.env.example
 
 # Yarn
-yarn.lock
+# yarn.lock - keep for CI/CD
